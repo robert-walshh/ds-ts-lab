@@ -1,4 +1,4 @@
-import {Friend, Colleague, ColleagueHistory} from './myTypes'
+import {Friend, Colleague, ColleagueHistory } from './myTypes'
 
 const friend1: Friend = {
   name: "Rory McNicholas",
@@ -12,7 +12,7 @@ const friend2: Friend = {
   age: 20,
 };
 
-export const friends: Friend[] = [friend1, friend2];
+export const friends = [friend1, friend2];
 
 // console.log(friends[1]);
 

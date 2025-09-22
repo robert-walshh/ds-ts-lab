@@ -1,15 +1,17 @@
-import {Friend, Colleague, ColleagueHistory } from './myTypes'
+import {Friend, Colleague, ColleagueHistory} from './myTypes'
 
 const friend1: Friend = {
-  name: "Rory McNicholas",
-  phone: "087-12345",
-  age: 21,
+    name: "Rory McNicholas",
+    phone: "087-12345",
+    age: 21,
+    dob: new Date("2004-01-06"), // YYYY-MM-DD
 };
 
 const friend2: Friend = {
-  name: "Mariah Jackson",
-  phone: "086--12445",
-  age: 20,
+    name: "Mariah Jackson",
+    phone: "086--12445",
+    age: 20,
+    interests: ['Music', 'Art']
 };
 
 export const friends = [friend1, friend2];
@@ -19,35 +21,35 @@ export const friends = [friend1, friend2];
 //   -------------------
 
 const colleague1: Colleague = {
-  name: "Ralph Graham",
-  department: "Engineering",
-  contact: {
-    email: "rgraham@company.com",
-    extension: 121,
-  },
+    name: "Ralph Graham",
+    department: "Engineering",
+    contact: {
+        email: "rgraham@company.com",
+        extension: 121,
+    },
 };
 
 const colleague2: Colleague = {
-  name: "Patti Burke",
-  department: "Finance",
-  contact: {
-    email: "pburke@company.com",
-    extension: 132,
-  },
+    name: "Patti Burke",
+    department: "Finance",
+    contact: {
+        email: "pburke@company.com",
+        extension: 132,
+    },
 };
 
 const colleague3: Colleague = {
-  name: "Dean Sullivan",
-  department: "HR",
-  contact: {
-    email: "dos@company.com",
-    extension: 125,
-  },
+    name: "Dean Sullivan",
+    department: "HR",
+    contact: {
+        email: "dos@company.com",
+        extension: 125,
+    },
 };
 
 export const colleagues: ColleagueHistory = {
-  current: [colleague1, colleague2, colleague3],
-  former: [],
+    current: [colleague1, colleague2, colleague3],
+    former: [],
 };
 
 // console.log(colleagues.current[0]);
